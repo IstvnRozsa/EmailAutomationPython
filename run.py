@@ -11,6 +11,12 @@ PORT = data["sender"]["port"]
 HOST = data["sender"]["host"]
 EMAIL_ADDRESS = data["sender"]["email_address"]
 PASSWORD = data["sender"]["password"]
+
+
+def send_emails(receivers):
+    for r in receivers:
+        receiver = Receiver(r["name"],r["email"],r["subject"], r["body"], r["sign"])
+        receiver.send_email()
     
     
 class Receiver:
@@ -49,6 +55,4 @@ class Receiver:
         
         
 
-
-r = Receiver("Pityu", "pisti.rzsa@gmail.com", "Haligali", "Haligali body", "Üdv.: Pityu")
-r.send_email()
+send_emails(data["receivers"])

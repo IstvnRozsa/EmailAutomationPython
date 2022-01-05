@@ -1,0 +1,33 @@
+{
+    "sender": {
+      "port": 111,
+      "host": "smtp.gmail.com",
+      "email_address": "test@gmail.com",
+      "password": "pass"
+      
+    },
+    "receivers": [
+      {
+        "name": "Name1",
+        "email": "test1@gmail.com",
+        "subject":"Subject1",
+        "body":"Body1",
+        "sign":"Sign"
+      },
+      {
+        "name": "Name2",
+        "email": "test2@gmail.com",
+        "subject":"Subject2",
+        "body":"Body2",
+        "sign":"Sign2"
+      },
+      {
+        "name": "Name3",
+        "email": "test1@gmail.com",
+        "subject":"Subject3",
+        "body":"Body3",
+        "sign":"Sign3"
+      }
+    ]
+  }
+  

@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 import json
 
 
-with open('config/config.json') as json_file:
+with open('public_config.json') as json_file:
     data = json.load(json_file)
     
 PORT = data["sender"]["port"]
